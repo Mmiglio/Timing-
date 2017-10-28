@@ -2,7 +2,8 @@
 Code for the Timing lab. experience 
 
 ## Macro description
-...
+
+* `getDGTZ.C`: this macro allows you to read the tree produced by VERDI and get the digitizer and channel informations
 
 ## Data 
 https://www.dropbox.com/home/TIMING
