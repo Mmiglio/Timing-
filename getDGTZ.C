@@ -27,6 +27,7 @@ struct psd_params_t {
 };
 
 void getPsd_params(char *file_name, int channel){
+	
 	psd_params_t params_psd;
 
 	TFile *infile = new TFile(file_name);
@@ -50,6 +51,7 @@ void getPsd_params(char *file_name, int channel){
 void getAcq_params(char *file_name){
 	
 	acq_params_t params_acq;
+	
 	TFile *infile = new TFile(file_name);
 	TTree *intree = (TTree*)infile->Get("acq_tree_0");
 	TBranch *inbranch = intree->GetBranch("acq_params");
@@ -72,7 +74,9 @@ void getAcq_params(char *file_name){
 }
 
 void getHistoFromTree(char *file_name, short chan, int nBins, double minX, double maxX){
+	
 	acq_data_t indata;
+	
 	TFile *infile = new TFile(file_name);
 	TTree *intree = (TTree*)infile->Get("acq_tree_0");
 	TBranch *inbranch = intree->GetBranch(Form("acq_ch%d",chan));
