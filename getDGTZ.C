@@ -4,7 +4,7 @@ struct acq_data_t {
 	UShort_t 	qshort;
 	UShort_t	qlong;
 	UShort_t 	pur;
-	UShort_t	scope;
+	UShort_t	scope[0];
 };
 
 struct acq_params_t {
@@ -96,7 +96,7 @@ void getHistoFromTree(char *file_name, short chan, int nBins, double minX, doubl
 		h_qshort->Fill(indata.qshort);
 		h_qlong->Fill(indata.qlong);
 		h_pur->Fill(indata.pur);
-		h_scope->Fill(indata.scope);
+		h_scope->Fill(indata.scope[0]);
 	}
 
 	/*h_timetag->Draw();
