@@ -96,7 +96,7 @@ void getHistoFromTree(char *file_name, short chan, int nBins, double minX, doubl
 		h_qshort->Fill(indata.qshort);
 		h_qlong->Fill(indata.qlong);
 		h_pur->Fill(indata.pur);
-		h_scope->Fill(indata.qshort);
+		h_scope->Fill(indata.scope);
 	}
 
 	/*h_timetag->Draw();
