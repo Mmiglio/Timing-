@@ -32,6 +32,7 @@ https://www.dropbox.com/home/TIMING
 * `cable_605mm.root` contains data acquired with a 605 mm cable in series to the one connecting the delay unit to the stop of the TAC
 * `cable_800mm.root` contains data acquired with a 800 mm cable in series to the one connecting the delay unit to the stop of the TAC
 * `cable_1000mm.root` contains data acquired with a 1000 mm cable in series to the one connecting the delay unit to the stop of the TAC
+* `external_delay_calibration.jpg` contains information of Gaussian fit performed with VERDI (in lab) used to measure the delay introduced by the cable
 ## Time resolution as a function of CFTD external delay
 10 minutes acquisitions
 * `external_delay_3ns.root` contains data acquired with a 3 ns delay cable used as external delay of CFTD
