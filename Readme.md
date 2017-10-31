@@ -4,6 +4,7 @@ Code for the Timing lab. experience
 # Macro description
 
 * `getDGTZ.C`: this macro allows you to read the tree produced by VERDI and get the digitizer and channel informations
+* `fit.C`: Macro used for the TAC calibration (the file centroids.txt contanis the centroids(ch) vs delay(ns))
 
 # Data 
 https://www.dropbox.com/home/TIMING
