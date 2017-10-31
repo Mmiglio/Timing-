@@ -26,7 +26,7 @@ struct psd_params_t {
 	UInt_t		numSamples;
 };
 
-void getPsd_params(char *file_name, int channel){
+void getPsd_params(TString file_name, int channel){
 	
 	psd_params_t params_psd;
 
@@ -48,7 +48,7 @@ void getPsd_params(char *file_name, int channel){
 
 }
 
-void getAcq_params(char *file_name){
+void getAcq_params(TString file_name){
 	
 	acq_params_t params_acq;
 	
@@ -73,7 +73,7 @@ void getAcq_params(char *file_name){
 	return;
 }
 
-void getHistoFromTree(char *file_name, short chan, int nBins, double minX, double maxX){
+void getHistoFromTree(TString file_name, short chan, int nBins, double minX, double maxX){
 	
 	acq_data_t indata;
 	
