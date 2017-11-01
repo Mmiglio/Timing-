@@ -4,7 +4,7 @@ double func(double* x, double* par){
 }
 
 double_t start_pt=0, //initial and final points for the fit
-	     end_pt=30;
+	 end_pt=30;
 
 void fit(){
 
@@ -46,19 +46,19 @@ void fit(){
 
 
 	graph->SetTitle(";;Centroid (channel)");
-    res->SetTitle(";Delay (ns);Residuals");
+   	res->SetTitle(";Delay (ns);Residuals");
 
 	TCanvas* c= new TCanvas("c","Residues"/*,200,10,700,500*/);
-    c->Divide(1,2,0,0);
-    //PArtendo da:(xSinistra,ySotto,xDestra,Ysopra) 
-    c->GetPad(1)->SetPad(.005, .30, .995, .96); 
+   	c->Divide(1,2,0,0);
+   	//PArtendo da:(xSinistra,ySotto,xDestra,Ysopra) 
+    	c->GetPad(1)->SetPad(.005, .30, .995, .96); 
 	c->GetPad(2)->SetPad(.005, .03, .995, .30);
     
-    c->cd(1);
-    c->GetPad(1)->SetTopMargin(.01);
-    //c->GetPad(1)->SetBottomMargin(.015);
-    c->GetPad(1)->SetBottomMargin(0.0);
-    c->GetPad(1)->SetRightMargin(.01);
+        c->cd(1);
+    	c->GetPad(1)->SetTopMargin(.01);
+    	//c->GetPad(1)->SetBottomMargin(.015);
+   	c->GetPad(1)->SetBottomMargin(0.0);
+   	c->GetPad(1)->SetRightMargin(.01);
 
 
 	//Draw the graph
@@ -73,13 +73,13 @@ void fit(){
 
 	leg->Draw("Same");
 
-    c->cd(2);
-    c->GetPad(2)->SetGridy();
-    c->GetPad(2)->SetTopMargin(0.0);//.05
-    c->GetPad(2)->SetBottomMargin(.25);
-    c->GetPad(2)->SetRightMargin(.01);
+   	c->cd(2);
+   	c->GetPad(2)->SetGridy();
+    	c->GetPad(2)->SetTopMargin(0.0);//.05
+    	c->GetPad(2)->SetBottomMargin(.25);
+    	c->GetPad(2)->SetRightMargin(.01);
 
-    res->GetYaxis()->SetTickLength(0.01);
+    	res->GetYaxis()->SetTickLength(0.01);
 	res->GetYaxis()->SetLabelSize(0.08);
 	res->GetYaxis()->CenterTitle();
 	
