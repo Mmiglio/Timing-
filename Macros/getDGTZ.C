@@ -73,7 +73,7 @@ void getAcq_params(TString file_name){
 	return;
 }
 
-void getHistoFromTree(TString file_name, short chan, int nBins, double minX, double maxX){
+TH1F* getHistoFromTree(TString file_name, short chan, int nBins, double minX, double maxX){
 	
 	acq_data_t indata;
 	
@@ -106,5 +106,5 @@ void getHistoFromTree(TString file_name, short chan, int nBins, double minX, dou
 	h_pur->Draw();
 	h_scope->Draw();*/
 
-	return;
+	return h_qlong;
 }

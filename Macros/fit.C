@@ -6,7 +6,7 @@ double func(double* x, double* par){
 double_t start_pt=0, //initial and final points for the fit
 	     end_pt=30;
 
-void fit(){
+void fit(TString file_name){
 
 	gROOT->Reset();
 	gROOT->SetStyle("Plain");
@@ -14,7 +14,7 @@ void fit(){
 	//gStyle->SetOptStat(0);
 	gStyle->SetStatBorderSize(0);
 
-	TGraphErrors* graph=new TGraphErrors("centroids.txt", "%lg %lg %lg");
+	TGraphErrors* graph=new TGraphErrors(file_name, "%lg %lg %lg");
 
 	graph->SetMarkerStyle(20);
 	graph->SetMarkerColor(kBlue);
